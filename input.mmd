@@ -1,0 +1,18 @@
+
+```mermaid
+flowchart TD
+    A[Input Image] --> B[Feature Extraction - Encoder]
+    B --> C[Bottleneck Processing]
+    C --> D[Reconstruction and Localization - Decoder]
+    D --> E[Final Prediction]
+
+    B --- F[Skip Connections for Precision]
+    F --- D
+
+    style A fill:#f9f,stroke:#333,stroke-width:2px,color:black
+    style B fill:#bbf,stroke:#333,stroke-width:2px,color:black
+    style C fill:#fbf,stroke:#333,stroke-width:2px,color:black
+    style D fill:#bfb,stroke:#333,stroke-width:2px,color:black
+    style E fill:#ffb,stroke:#333,stroke-width:2px,color:black
+    style F fill:#fbb,stroke:#333,stroke-width:2px,color:black
+```
