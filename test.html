@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Mermaid Flowchart</title>
+  <script src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
+  <script>
+    mermaid.initialize({ startOnLoad: true });
+  </script>
+</head>
+<body>
+  <h1>Flowchart</h1>
+  <div class="mermaid">
+
+    flowchart LR;
+    News-->Humour_Detection;
+    LLM-->Captions;
+    Humour_Detection-->LLM;
+    Captions-->Assembly;
+    Storage-->Assembly;
+    Assembly-->PIL;
+    Blank_Templates-->Assembly;
+    PIL-->Meme;
+    Ready-made_Templates-->OCR;
+    OCR-->Text_Co-ordinates;
+    Text_Co-ordinates-->Storage;
+    Meme-->Posting;
+  </div>
+</body>
+</html>

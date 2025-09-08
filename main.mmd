@@ -1,3 +1,4 @@
+
 ``` mermaid
 flowchart TD;
     Darpan-->B;
@@ -24,6 +25,25 @@ flowchart LR;
     B-->E;
 ```
 
+# MemeEngine
+``` mermaid
+flowchart LR;
+    News-->Humour_Detection;
+   Humour_Detection-->   
+    
+   Captions-->Assembly;
+   Storage-->Assembly;
+    Assembly-->PIL;
+    Blank_Templates-->Assembly;
+    PIL-->Meme;
+    Ready-made_Templates-->OCR;
+    OCR-->Text_Co-ordinates;
+    Text_Co-ordinates-->Storage;
+   
+    Meme-->Posting
+
+
+```
 ## Flowchart with some colors and shapes and stuff
 
 ``` mermaid
@@ -364,4 +384,3 @@ stateDiagram-v2
         ScrollLockOn --> ScrollLockOff : EvCapsLockPressed
     }
 ```
-
