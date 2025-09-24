@@ -1,18 +1,48 @@
+---
+id: f2b67b55-11f9-4b70-a515-7a5badda5197
+---
+graph TD
+    A[Browser]
+    B[Project]
+    C[memes/urls.py]
+    D[memes/views.py]
+    E[memes/models.py]
+    F[memes/forms.py]
+    G[memes/utils.py]
+    H[memes/storage.py]
+    I[memes/constants.py]
+    J[memes/input_news.py]
+    K[memes/meme_detail.py]
+    L[templates/*.html]
+    M[static/meme_templates/]
+    N[static/generated_memes/]
+    O[db.sqlite3]
+    P[output_image.png]
+    Q[main_posting.py]
+    R[geminiapi.py]
+    S[upload_dropbox.py]
+    T[settings.py]
+    U[admin.py]
+    V[tests.py]
 
-```mermaid
-flowchart TD
-    A[Input Image] --> B[Feature Extraction - Encoder]
-    B --> C[Bottleneck Processing]
-    C --> D[Reconstruction and Localization - Decoder]
-    D --> E[Final Prediction]
-
-    B --- F[Skip Connections for Precision]
-    F --- D
-
-    style A fill:#f9f,stroke:#333,stroke-width:2px,color:black
-    style B fill:#bbf,stroke:#333,stroke-width:2px,color:black
-    style C fill:#fbf,stroke:#333,stroke-width:2px,color:black
-    style D fill:#bfb,stroke:#333,stroke-width:2px,color:black
-    style E fill:#ffb,stroke:#333,stroke-width:2px,color:black
-    style F fill:#fbb,stroke:#333,stroke-width:2px,color:black
-```
+    A --> B
+    B --> C
+    C --> D
+    D --> E
+    D --> F
+    D --> G
+    D --> H
+    D --> I
+    D --> J
+    D --> K
+    D --> L
+    D --> M
+    D --> N
+    D --> O
+    D --> P
+    D --> Q
+    D --> R
+    D --> S
+    B --> T
+    D --> U
+    D --> V

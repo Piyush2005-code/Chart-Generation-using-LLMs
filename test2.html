@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="UTF-8"></head>
+<body>
+  <pre class="mermaid">
+   graph TD
+    Alice["Alice"]
+    Bob["Bob"]
+    Carol["Carol"]
+    Paris["Paris"]
+    Berlin["Berlin"]
+    ProjectX["Project X"]
+    Funding["Funding"]
+    Deadlines["Deadlines"]
+    Implementation["Implementation"]
+    Updates["Updates"]
+
+    Alice -- "Meets in" --> Bob
+    Bob -- "Location" --> Paris
+    Alice & Bob -- "Discuss" --> ProjectX
+    Alice & Bob -- "Make decisions about" --> Funding
+    Alice & Bob -- "Make decisions about" --> Deadlines
+
+    Bob -- "Travels to" --> Berlin
+    Bob -- "Talks with" --> Carol
+    Carol -- "Location" --> Berlin
+    Bob & Carol -- "Discuss" --> Implementation
+
+    Carol -- "Sends" --> Updates
+    Updates -- "To" --> Alice
+
+  </pre>
+
+  <script type="module">
+    import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs';
+    mermaid.initialize({ startOnLoad: true });
+  </script>
+</body>
+</html>

@@ -384,3 +384,13 @@ stateDiagram-v2
         ScrollLockOn --> ScrollLockOff : EvCapsLockPressed
     }
 ```
+
+```mermaid
+graph LR;
+    Alice -->meets--> Bob;
+    Alice -->discusses--> ProjectX;
+    Alice -->decides on--> Funding;
+    Alice -->decides on--> Deadlines;
+    Bob -->discusses--> Implementation;
+    Carol -->sends updates to--> Alice;
+```
