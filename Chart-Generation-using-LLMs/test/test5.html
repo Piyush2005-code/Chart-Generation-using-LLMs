@@ -1,0 +1,28 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="UTF-8"></head>
+<body>
+  <pre class="mermaid">
+  stateDiagram-v2
+    [*] --> AliceMeetsBob
+
+    AliceMeetsBob: Alice meets Bob
+    AliceBobDecide: Alice & Bob decide on Project X (funding, deadlines)
+    BobTravels: Bob travels to meet Carol
+    BobCarolDiscuss: Bob & Carol discuss Project X implementation
+    CarolSendsUpdates: Carol sends updates to Alice
+
+    AliceMeetsBob --> AliceBobDecide
+    AliceBobDecide --> BobTravels
+    BobTravels --> BobCarolDiscuss
+    BobCarolDiscuss --> CarolSendsUpdates
+    CarolSendsUpdates --> [*]
+  </pre>
+
+  <script type="module">
+    import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs';
+    mermaid.initialize({ startOnLoad: true });
+  </script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="UTF-8"></head>
+<body>
+  <pre class="mermaid">
+flowchart TD
+  A["NL Text Input (Client Requirements)"] --> B[Sentence Segmentation]
+  B --> C[Word Separation & POS Tagging]
+  C --> D["Domain Specific Database (Entity, Attribute, Relation Names/Synonyms)"]
+  C --> E[Entity, Attribute, Relation Detection]
+  E --> D
+  E --> F[Pronoun Resolution]
+  F --> G["ER Model Generation (Internal Graph/Dictionary)"]
+  G --> H["E-R Diagram Output (JPG/SVG file)"]
+  H --> I[DDL Generation]
+  I --> J["RDBMS System (Physical Model)"]
+
+
+  </pre>
+
+  <script type="module">
+    import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs';
+    mermaid.initialize({ startOnLoad: true });
+  </script>
+</body>
+</html>

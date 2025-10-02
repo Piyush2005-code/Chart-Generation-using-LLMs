@@ -1,0 +1,22 @@
+# Core dependencies for Chart Generation using LLMs project
+
+# AI/LLM Libraries
+mistralai>=1.0.0
+langchain>=0.1.0
+langchain-core>=0.1.0
+langchain-google-genai>=1.0.0
+
+# Mermaid diagram generation
+python-mermaid>=0.1.0
+
+# Standard libraries (usually included with Python)
+# os - built-in module, no installation needed
+
+# Optional dependencies for enhanced functionality
+# jupyter>=1.0.0  # Uncomment if you need Jupyter notebook support
+# ipython>=8.0.0  # Uncomment if you need IPython support
+
+# Development dependencies (uncomment if needed)
+# pytest>=7.0.0
+# black>=22.0.0
+# flake8>=5.0.0

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="UTF-8"></head>
+<body>
+  <pre class="mermaid">
+flowchart TD
+    A["Alice"] -->|Meets| B["Bob"]
+    B & A -->|Decide on Project X (funding, deadlines)| C["Project X Decisions"]
+    B -->|Travels to meet| D["Carol"]
+    B & D -->|Discuss Project X Implementation| E["Project X Implementation"]
+    D -->|Sends| F["Updates"]
+    F -->|To| A
+
+    %% Styles
+    style A fill:#f9c74f,stroke:#000,stroke-width:3px,shadow:1px 1px 5px gray
+    style B fill:#90be6d,stroke:#000,stroke-width:3px,shadow:1px 1px 5px gray
+    style C fill:#f94144,stroke:#000,stroke-width:3px,shadow:1px 1px 5px gray,stroke-dasharray: 5 5
+    style D fill:#577590,stroke:#000,stroke-width:3px,shadow:1px 1px 5px gray
+    style E fill:#43aa8b,stroke:#000,stroke-width:3px,shadow:1px 1px 5px gray,stroke-dasharray: 5 5
+    style F fill:#f3722c,stroke:#000,stroke-width:3px,shadow:1px 1px 5px gray
+
+
+  </pre>
+
+  <script type="module">
+    import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs';
+    mermaid.initialize({ startOnLoad: true });
+  </script>
+</body>
+</html>

@@ -1,0 +1,11 @@
+flowchart TD
+  A["NL Text Input (Client Requirements)"] --> B[Sentence Segmentation]
+  B --> C[Word Separation & POS Tagging]
+  C --> D["Domain Specific Database (Entity, Attribute, Relation Names/Synonyms)"]
+  C --> E[Entity, Attribute, Relation Detection]
+  E --> D
+  E --> F[Pronoun Resolution]
+  F --> G["ER Model Generation (Internal Graph/Dictionary)"]
+  G --> H["E-R Diagram Output (JPG/SVG file)"]
+  H --> I[DDL Generation]
+  I --> J["RDBMS System (Physical Model)"]
