@@ -7,12 +7,14 @@ from langchain_core.prompts import ChatPromptTemplate
 from langchain_core.documents import Document
 from langchain.chains.combine_documents import create_stuff_documents_chain
 from pdf_scanner_alternative import extract_with_pdfplumber
+from dotenv import load_dotenv
 
+# Load environment variables
+load_dotenv()
 # If using environment variable for API Key
-os.environ["GOOGLE_API_KEY"] = "AIzaSyCD2LStsBJXjXNtysgp9Ma3hrCCmopRo-4"
-
+api_key = os.getenv("GEMINI_API_KEY")
 # Initialize Gemini model (set to use Gemini, adjust model name as needed)
-llm = ChatGoogleGenerativeAI(model="gemini-2.5-flash")
+llm = ChatGoogleGenerativeAI(model="gemini-2.5-flash", api_key=api_key)
 
 # The prompt template for diagram-relevant summary
 prompt = ChatPromptTemplate.from_template(
@@ -39,3 +41,44 @@ result = chain.invoke({"context": documents})
 
 print("Summary for diagram generation:")
 print(result)
+
+# Environment variables
+# .env
+# .env.local
+# .env.*.local
+
+# API Keys
+# key.py
+# **/key.py
+
+# Python
+# __pycache__/
+# *.py[cod]
+# *$py.class
+# *.so
+# .Python
+# build/
+# develop-eggs/
+# dist/
+# downloads/
+# eggs/
+# .eggs/
+# lib/
+# lib64/
+# parts/
+# sdist/
+# var/
+# wheels/
+# *.egg-info/
+# .installed.cfg
+# *.egg
+
+# IDE
+# .vscode/
+# .idea/
+# *.swp
+# *.swo
+
+# OS
+# .DS_Store
+# Thumbs.db

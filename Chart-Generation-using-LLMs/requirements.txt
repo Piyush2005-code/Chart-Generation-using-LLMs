@@ -17,6 +17,7 @@ python-mermaid>=0.1.0
 # ipython>=8.0.0  # Uncomment if you need IPython support
 
 # Development dependencies (uncomment if needed)
-# pytest>=7.0.0
-# black>=22.0.0
-# flake8>=5.0.0
+pytest>=7.0.0
+black>=22.0.0
+flake8>=5.0.0
+python-dotenv>=1.0.0
