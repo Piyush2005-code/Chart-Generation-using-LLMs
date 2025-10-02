@@ -17,4 +17,3 @@ chat_response = client.chat.complete(
 )
 print(chat_response.choices[0].message.content)
 
-#xNBoKegkVBwyMfNE7ppKTG1ziT0o9YBh
